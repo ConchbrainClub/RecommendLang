@@ -1,2 +1,2 @@
 # RecommendLang
-ConchBrainClub official website recommends language classification
+ConchBrainClub official website recommends classification

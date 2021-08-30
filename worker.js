@@ -4,7 +4,7 @@ addEventListener('fetch', event => {
 
 async function handleRequest(request) {
   let langs = await Storage.get("articleLang");
-  
+
   return new Response(langs, {
     status: 200,
     headers: {
@@ -28,7 +28,7 @@ addEventListener('scheduled', event => {
 async function handleSchedule(scheduledDate) {
 
   let response = await fetch(`https://www.conchbrain.club/articles/config.json?${Math.random()}`);
-  let pages = await response.json();
+  let pages = (await response.json()).pages;
 
   let langs = new Array();
 

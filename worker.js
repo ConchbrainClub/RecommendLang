@@ -32,7 +32,7 @@ async function handleSchedule(scheduledDate) {
 
   let langs = new Array();
 
-  for(let i = 0; i < pages.length; i++) {
+  for(let i = 0; i < 40; i++) {
     let projects = await fetch(`https://www.conchbrain.club/articles/pages/${pages[i].name}?${Math.random()}`);
     projects = await projects.json();
 
